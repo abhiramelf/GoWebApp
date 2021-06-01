@@ -11,5 +11,6 @@ func main() {
 }
 
 func indexPage(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
 	fmt.Fprint(w, "<h1>Welcome to Abhiram's site!</h1>")
 }
